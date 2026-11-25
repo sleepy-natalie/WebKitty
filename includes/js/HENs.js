@@ -103,7 +103,7 @@ function updateHenFlavorVisibility(fwVersion) {
     if (isNaN(fwNum)) return;
     var hideGoldHEN = (fwNum > 14.02 || fwNum < 5.05) ? true : false;
     
-    var hidenexHEN = !devMode;
+    var hidenexHEN = (fwNum > 14.02 || fwNum < 5.05) ? true : false;
 
     var hidePS4HEN = (fwNum > commonMax && fwNum != 4.55 && fwNum != 4.74) ? true : false;
 
